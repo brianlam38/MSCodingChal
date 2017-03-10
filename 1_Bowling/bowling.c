@@ -4,21 +4,19 @@
 #define MAX 240
 #define WALKING 10
 
+// Time Complexity = O(t*n) --> Slightly more efficient by breaking early once currSum > MAX is found.
+// Space = 2n
 int main(int argc, char *argv[]) {
 	// input weeks
 	int t;
 	scanf("%d", &t);
-	// input serving (S) and eating (C) time
 	for (int k = 0; k < t; k++) {
-		// input people
+		// input numfriends attending
 		int n;
 		scanf("%d", &n);
-
-		//printf("week = %d\n", k);
 		int maxSum = 0;
 		int *serve = malloc(sizeof(int) * n);
 		int *eat = malloc(sizeof(int) * n);
-
 		for (int i = 0; i < n; i++) {
 			//printf("friend = %d\n", i);
 			int currSum = 0;
@@ -27,11 +25,10 @@ int main(int argc, char *argv[]) {
 			scanf("%d", &eat[i]);
 			currSum += eat[i];
 			currSum += WALKING;
-			// Keep tracking of highest
+			// Keep tracking of slowest friend
 			if (currSum > maxSum) {
 				maxSum = currSum;
 			}
-			//printf("maxSum = %d\n", maxSum);
 		}
 		// Not enough time to bowl at all
 		if (maxSum > MAX) {
@@ -40,6 +37,5 @@ int main(int argc, char *argv[]) {
 		}
 		printf("%d\n", MAX - maxSum);
 	}
-
 	return EXIT_SUCCESS;
 }
