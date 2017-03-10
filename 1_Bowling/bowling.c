@@ -4,7 +4,8 @@
 #define MAX 240
 #define WALKING 10
 
-// Time Complexity = O(t*n) --> Slightly more efficient by breaking early once currSum > MAX is found.
+// Time Complexity = O(t*n) --> Can be slightly more efficient by
+//								breaking early once currSum > MAX is found.
 // Space = 2n
 int main(int argc, char *argv[]) {
 	// input weeks
