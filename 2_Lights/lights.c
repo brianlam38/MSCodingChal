@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// #####################
+// Solution is INCORRECT
+// #####################
+
 void func(int n);
 
 int main(int argc, char *argv[]) {
@@ -21,9 +25,6 @@ int main(int argc, char *argv[]) {
 		scanf("%d", &n);
 		func(n);
 	}
-	
-
-
 	return EXIT_SUCCESS;
 }
 
@@ -35,7 +36,6 @@ void func(int n) {
 	for (int i = 0; i*i < n ; i++) {
     	counter = i;
 	}
-
 	printf("%d\n", n - counter);
 }
 
