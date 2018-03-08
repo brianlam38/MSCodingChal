@@ -1,0 +1,28 @@
+Contoso Fulfillment, a small logistics startup, is celebrating the 2nd anniversary of the company. The marketing team has decided that all shipments will now use a cylindrical 'anniversary' box to commemorate this milestone. Currently, the fulfillment center has everything packed in rectangular prism boxes or triangular prism boxes. All of the boxes are equilateral at their base and
+all of the prism boxes are 12 inches tall. The cylindrical 'anniversary' boxes are 13 inches tall. Given a radius for a cylindrical box, your program should figure out if a given prism box will fit strictly inside of it, and thus ship.
+
+Input definition
+An input file for this problem will be of the following format:
+
+X;
+R,N,L;
+R,N,L;
+R,N,L;
+R,N,L;
+...
+(X times)
+Where:
+
+X = The number of packages the company needs to attempt to fit and ship.
+R = Radius of the cylindrical box
+N = 3 for a triangular prism box and 4 for a rectangular prism box
+L = Length of each side of the base of the prism box
+Output definition
+The number of boxes that fit in the cylindrical 'anniversary' boxes.
+
+Example input
+2;
+5,3,1;
+2,4,4;
+Example output
+1

@@ -1,0 +1,17 @@
+Data Consolidation (1 point)
+
+Many services generate huge amounts of data when in operation. There is often a need to parse and consolidate that data to understand and improve those services. One common metric to calculate is the average of the generated data.
+
+Given a set of data as a string of comma separated values (CSVs), write a program to calculate its average value (arithmetic mean).
+
+Input definition
+An input file for this program will contain a string of 500 or fewer comma separated integers, ranging from 1 to 1000, inclusive.
+
+Output definition
+Your output should be the integer that is the (rounded) mean of the given integers.
+
+Example input
+1,2,3,4
+Example output
+3
+

@@ -1,0 +1,49 @@
+Set Game (1 point)
+
+Set is a card game where players try to find a set of three cards.
+
+Each card has four attributes and each attribute has 3 possible values:
+
+Attribute 1: Number of objects
+Values: 1, 2, 3
+Attibute 2: Shading
+Values: Empty, Striped, Filled
+Attribute 3: Color
+Values: Red, Purple, Green
+Attribute 4: Shape
+Values: Oval, Squiggles, Diamonds
+The goal of the original game is to select 3 cards from a set of 12 such that for each attribute, either all three cards share the same value or all three cards have a different value.
+
+Your task here is slightly different. You will be given the attribute values for two cards. For any given 2 cards, find the one and only one possible 3rd card in the set.
+
+Let's consider an example in which we're given two cards with these attribute values:
+2	empty	red	diamonds
+3	striped	red	ovals
+
+To form a set, the third card must have these attribute values:
+
+Count: 1 object
+Shading: Filled
+Color: Red
+Shape: Squiggle
+Input definition
+The first line of an input file for this problem will contain a single integer n (1 ≤ n ≤ 1,000), the number of remaining lines in the file (the number of given pairs of cards). Each of the next n lines will identify a pair of cards. For each given card, four characters will signify the card's attributes.
+
+For Count: 1 = 1 object on the card, 2 = 2 objects on the card, 3 = 3 objects on the card
+For Fill: E = Empty, F = Filled, S = Striped
+For Color: G = Green, P = Purple, R = Red
+For Shape: O = Oval (the letter O), D = Diamond, S = Squiggle
+Thus, the input for the given example above (2 empty red diamonds, 3 striped red ovals) would be: "2ERD 3SRO". Similarly, the set-completing card for this example would be "1FRS" (1 filled red squiggle).
+
+Output definition
+Your output should contain n lines. Each line should identify the set-completing card for the given pair of input cards, prefaced by a Group label, i.e. "Group " + (test case number) +": " + (attributes for the 3rd card).
+
+Example input
+3
+2ERD 3SRO 
+1SPS 1ERO
+1EGD 2SGO
+Example output
+Group 1: 1FRS
+Group 2: 1FGD
+Group 3: 3FGS

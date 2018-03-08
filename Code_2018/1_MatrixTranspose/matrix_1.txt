@@ -1,0 +1,19 @@
+Matrix Transpose (1 point)
+
+Given a matrix, calculate its transpose. If needed, further info about matrix transposes can be found at https://en.wikipedia.org/wiki/Transpose .
+
+Input definition
+An input file for this problem will contain an m by n matrix that is represented as a line-and-space-separated string. Each line corresponds to a row in the matrix. Each input file will contain m lines and each line will contain n space separated non-negative integers less than 100. Both m and n may range from 1 to 100, inclusive.
+
+Output definition
+Your output should be an n by m matrix that is the tranpose of the given matrix and is represented as a line-and-space-separated string. In particular, each row of the transposed matrix should be on its own line and each row should be space separated.
+
+Example input
+1 2 3 4
+5 6 7 8
+9 10 11 12
+Example output
+1 5 9
+2 6 10
+3 7 11
+4 8 12
